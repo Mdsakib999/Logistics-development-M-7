@@ -37,7 +37,7 @@ const Header = () => {
           }
         `}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center border-black border-4 justify-between">
           {/* Logo - Compact & clean */}
           <Link href="/" className="flex items-center gap-2 group mr-8">
             <span className="text-xl font-bold tracking-tight text-secondary block">
@@ -67,9 +67,6 @@ const Header = () => {
 
           {/* Actions */}
           <div className="hidden lg:flex items-center gap-3 ml-auto">
-            <a href="tel:+13075550133" className="text-sm font-bold text-secondary px-4 py-2 hover:text-primary transition-colors">
-              +1 (307) 555-0133
-            </a>
             <Button 
               type="primary" 
               href="/contact"
