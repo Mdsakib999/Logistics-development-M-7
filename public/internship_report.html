@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Report - Muntasir Mahmud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            body {
+                background-color: white;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        .prose p {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .prose li {
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen py-10 print:py-0 print:bg-white">
+
+    <!-- Floating Print Button -->
+    <div class="fixed bottom-8 right-8 no-print">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            Save as PDF
+        </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl print:shadow-none p-12 print:p-0 mb-10">
+        
+        <!-- Header -->
+        <header class="border-b-2 border-gray-100 pb-8 mb-10">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">Internship Journey Report</h1>
+            <div class="flex flex-col md:flex-row md:justify-between text-gray-600 mt-4">
+                <div>
+                    <span class="font-semibold text-gray-800">Name:</span> Muntasir Mahmud
+                </div>
+                <div>
+                    <span class="font-semibold text-gray-800">Role:</span> Full Stack Web Developer Intern
+                </div>
+                <div>
+                    <span class="font-semibold text-gray-800">Period:</span> Sept 2025 - Nov 2025
+                </div>
+            </div>
+        </header>
+
+        <!-- September -->
+        <section class="mb-12">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-2xl font-bold text-blue-800">September, 2025</h2>
+                <div class="h-px bg-gray-200 flex-grow"></div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">1. Overview</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    This month, my focus was on understanding the company’s coding standards, improving collaboration skills, enhancing frontend development proficiency, and learning advanced state management tools. I also worked on practical assignments contributing to live projects and converting Figma designs into responsive, maintainable React applications.
+                </p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">2. Weekly Summary</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 1 – Understanding Existing Codebase & UI Patterns</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Studied the coding patterns, code reviews, and UI structure of the company’s previous projects.</li>
+                            <li>Analyzed existing projects to understand architecture, component structure, and design approach.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 2 – Team Collaboration & HTML/CSS Practice</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Learned how to work collaboratively on GitHub through pull requests, branching, and code reviews.</li>
+                            <li>Practiced teamwork workflow by contributing to a demo website replicating previous company work.</li>
+                            <li>Refreshed and strengthened HTML and CSS skills during this practice.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 3 – Project Contribution</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Contributed to the frontend portion of an e-commerce website in collaboration with the team.</li>
+                            <li>Implemented UI components, ensured responsiveness, and maintained code quality according to company standards.</li>
+                            <li>Learned Redux, Redux Toolkit, and RTK Query for efficient state management in React applications.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 4 – Advanced State Management & Figma Conversion</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Converted a Figma design into a responsive logistics website using React and Tailwind CSS.</li>
+                            <li>Focused on reusable components, scalability, and optimized code quality.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">3. Key Learnings</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Gained a strong understanding of the company’s coding standards and project architecture.</li>
+                    <li>Developed collaborative skills through GitHub workflows and team code reviews.</li>
+                    <li>Enhanced frontend development skills in React, Tailwind CSS, and responsive UI design.</li>
+                    <li>Learned advanced state management concepts using Redux, Redux Toolkit, and RTK Query.</li>
+                    <li>Improved ability to convert designs into high-quality, maintainable code.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Projects</h3>
+                <div class="overflow-hidden border border-gray-200 rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Project</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Repository</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Live Link</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">E-commerce (Unimart) Frontend</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">GitHub</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Live</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Logistics Website (Figma to React)</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">GitHub</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Live</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Logistics Practise UI</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">GitHub</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Redux, RTK Query Project</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">GitHub</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- October -->
+        <section class="mb-12 pt-8 print:pt-0">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-2xl font-bold text-blue-800">October, 2025</h2>
+                <div class="h-px bg-gray-200 flex-grow"></div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">1. Overview</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    During October, my main focus was on improving previously built UI projects, developing a complete e-commerce frontend, and strengthening my UI/UX design abilities in Figma. I refined responsiveness and component structure based on senior feedback, built a production-ready frontend for BuyHive, and explored advanced Figma tools while creating a logistics website prototype.
+                </p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">2. Weekly Summary</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 1 – UI Improvements & Responsive Enhancement</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Improved the Figma-to-React logistics website based on senior feedback.</li>
+                            <li>Enhanced UI consistency, alignment, spacing, and visual hierarchy.</li>
+                            <li>Fixed responsiveness across mobile, tablet, and desktop screens.</li>
+                            <li>Ensured closer accuracy to the original Figma design.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 2 & Week 3 – BuyHive E-commerce Frontend Development</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Developed the full frontend for the BuyHive e-commerce platform.</li>
+                            <li>Focused on creativity, human-centered UI, and clean component structure.</li>
+                            <li>Added product listing UI, layout structure, responsive pages, and seamless UX interactions.</li>
+                            <li>Followed scalable folder architecture with API integration to the existing backend.</li>
+                            <li>Used AI tools for productivity while avoiding copy-paste dependency.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 4 – Figma UI/UX Exploration & Freight Forwarding Prototype</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Learned advanced Figma tools including components, auto-layout, and grid systems.</li>
+                            <li>Designed a freight forwarding website prototype from scratch with modern, aesthetic UI.</li>
+                            <li>Studied design inspirations from ThemeForest, Dribbble, and Behance.</li>
+                            <li>Created a structured, professional design based on real-world industry styles.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">3. Key Learnings</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Improved UI consistency, spacing, and responsive techniques.</li>
+                    <li>Strengthened real-world frontend development skills through BuyHive.</li>
+                    <li>Enhanced understanding of design systems, auto-layout, and Figma workflows.</li>
+                    <li>Learned to analyze templates and UI trends to create original, professional designs.</li>
+                    <li>Improved ability to convert feedback into high-quality UI improvements.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Projects</h3>
+                <div class="overflow-hidden border border-gray-200 rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Project</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Repository</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Live Link</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Logistics Website (UI Improvements)</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">GitHub</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Live</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">E-commerce (BuyHive) Frontend</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">GitHub</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Live</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Freight Forwarding Figma UI Prototype</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Figma Source Link</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- November -->
+        <section class="mb-12 pt-8 print:pt-0">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-2xl font-bold text-blue-800">November, 2025</h2>
+                <div class="h-px bg-gray-200 flex-grow"></div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">1. Overview</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    During November, my focus was on building new e-commerce frontends, converting UI prototypes into functional Next.js projects, and strengthening my development skills. I developed the ShopVerse e-commerce frontend, focusing on creative UI design, responsiveness, and backend understanding. Later in the month, I converted the freight-forwarding Figma prototype into a live Next.js logistics website, which strengthened my practical understanding of Next.js fundamentals. I also began learning and integrating TypeScript into my projects to improve type safety and code reliability.
+                </p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">2. Weekly Summary</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 1 & Week 2 – ShopVerse E-commerce Frontend Development + Backend Understanding</h4>
+                        <p class="text-gray-700 mt-2 mb-2">
+                            During the first two weeks of November, I developed a new e-commerce frontend project named ShopVerse, using an already prepared backend. This time, I focused heavily on creative UI design, exploring modern layout patterns and user-friendly interactions. I studied design inspirations from ThemeForest, Dribbble, and other template platforms to ensure my interface looked more natural, modern, and visually engaging.
+                        </p>
+                        <p class="text-gray-700 mb-2">
+                            Alongside UI development, I also took time to understand how the backend works with the project. This included studying:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>API communication flow</li>
+                            <li>Authentication handling</li>
+                            <li>Database schema structure</li>
+                            <li>How the frontend and backend synchronize data</li>
+                        </ul>
+                        <p class="text-gray-700 mt-2">
+                            This helped me build a deeper understanding of the complete workflow of the e-commerce system.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 print:border-none print:p-0 print:bg-transparent">
+                        <h4 class="font-semibold text-gray-900">Week 3 & Week 4 – Converting Freight Forwarding Figma Design Into a Real Next.js Project</h4>
+                        <p class="text-gray-700 mt-2 mb-2">
+                            In the final two weeks of November, I transformed the freight forwarding website prototype I previously designed in Figma into a fully functional Next.js project. This process helped strengthen my practical understanding of Next.js fundamentals through a real-world logistics application.
+                        </p>
+                        <p class="text-gray-700 mb-2">My focus included:</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>Translating the Figma layout into clean, scalable React/Next.js components</li>
+                            <li>Applying Tailwind CSS for responsive, modern UI</li>
+                            <li>Maintaining component reusability and optimized code structure</li>
+                            <li>Understanding file-based routing, page structure, and project architecture in Next.js</li>
+                            <li>Improving my ability to convert UI/UX concepts into functional production-grade code</li>
+                        </ul>
+                        <p class="text-gray-700 mt-2">
+                            Working on this logistics project significantly enhanced both my frontend development workflow and my confidence in handling Next.js in real client-style scenarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">3. Key Learnings</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Improved creative UI design and human-centered frontend development skills.</li>
+                    <li>Learned full e-commerce system workflow, including backend structure, API communication, and authentication.</li>
+                    <li>Strengthened Next.js fundamentals, project architecture, and routing knowledge.</li>
+                    <li>Practiced converting Figma designs into functional production-grade applications.</li>
+                    <li>Began learning TypeScript for better code quality, maintainability, and reliability.</li>
+                    <li>Enhanced problem-solving skills and confidence in handling real-world projects.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Projects</h3>
+                <div class="overflow-hidden border border-gray-200 rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Project</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Repository</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Live Link</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">E-commerce (ShopVerse) Frontend</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Live</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Understanding Backend Documentation</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Notes</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Figma to NextJS Project</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">Live</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Started Understanding TypeScript</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-16 border-t border-gray-200 pt-8 text-center text-gray-500 text-sm">
+            <p>Generated on November 30, 2025</p>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Typography with Inter font */
+  body {
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+  }
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+  }
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+  p {
+    font-size: var(--text-base);
+    font-weight: 400;
+  }
+
+  /* Happy & Vibrant Color Palette */
+  @theme {
+    --color-primary: oklch(59.6% 0.145 163.225);
+    --color-secondary: #1e3a8a;
+
+    --color-accent: #fbbf24; /* Bright yellow - highlights */
+    --color-foreground: oklch(
+      95% 0.052 163.051
+    ); /* Light cream - warm background */
+    --color-background: #1e1b4b; /* Deep indigo - dark sections */
+    --color-muted: #64748b; /* Slate gray - secondary text */
+    --color-success: #10b981; /* Emerald green */
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Container */
+.container-custom {
+  width: 100%;
+  max-width: 80rem; /* 1280px - equivalent to max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Subtle Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation Utility Classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Hover Effects - Subtle */
+.hover-lift {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.1),
+    0 10px 10px -5px rgba(249, 115, 22, 0.04);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Shadow Utilities - Prominent */
+.shadow-prominent {
+  box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.1),
+    0 2px 4px -1px rgba(249, 115, 22, 0.06);
+}
+
+.shadow-prominent-lg {
+  box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.15),
+    0 4px 6px -2px rgba(249, 115, 22, 0.08);
+}
+
+.shadow-prominent-xl {
+  box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.2),
+    0 10px 10px -5px rgba(249, 115, 22, 0.1);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-happy {
+  background: linear-gradient(
+    135deg,
+    oklch(95% 0.052 163.051) 0%,
+    oklch(84.5% 0.143 164.978) 100%
+  );
+}
+
+.bg-gradient-vibrant {
+  background: linear-gradient(
+    135deg,
+    oklch(84.5% 0.143 164.978) 0%,
+    oklch(50.8% 0.118 165.612) 100%
+  );
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+}
