@@ -35,7 +35,7 @@ const companies = [
 ];
 
 const TestimonialCard = ({ testimonial }) => (
-  <div className="bg-white hover:shadow-prominent-xl transition-all duration-300 rounded-3xl p-8 border border-gray-100 hover-scale relative overflow-hidden">
+  <div className="bg-zinc-800 hover:shadow-prominent-xl transition-all duration-300 rounded-3xl p-8 border border-zinc-700 hover-scale relative overflow-hidden">
     {/* Company Logo Badge */}
     <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
       <span className="text-primary font-bold text-sm">{testimonial.logo}</span>
@@ -85,7 +85,7 @@ const TestimonialCard = ({ testimonial }) => (
 
 const Testomonial = () => {
   return (
-    <section className="py-20 md:py-28 bg-foreground">
+    <section className="py-20 md:py-28 bg-black">
       <div className="container-custom">
         {/* Logo Wall */}
         <div className="mb-16">

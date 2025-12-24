@@ -16,7 +16,7 @@ const ServiceCard = ({
     : description;
 
   return (
-    <div className="bg-foreground rounded-3xl overflow-hidden hover:shadow-prominent-xl transition-all duration-300 hover-scale group h-full flex flex-col relative border border-gray-100">
+    <div className="bg-zinc-800 rounded-3xl overflow-hidden hover:shadow-prominent-xl transition-all duration-300 hover-scale group h-full flex flex-col relative border border-zinc-700">
       {/* Service Image */}
       <Link
         href={link}
@@ -32,7 +32,7 @@ const ServiceCard = ({
           height={300}
         />
         {/* Badge */}
-        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full z-20 shadow-sm border border-white/50">
+        <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm px-4 py-2 rounded-full z-20 shadow-sm border border-white/20">
           <span className="text-sm font-bold text-secondary">{info}</span>
         </div>
       </Link>
@@ -42,7 +42,7 @@ const ServiceCard = ({
         <div>
            <div className="mb-3 flex items-center justify-between">
              <H3 color="secondary" className="text-2xl transition-colors group-hover:text-primary">{title}</H3>
-             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm transform translate-y-2 group-hover:translate-y-0">
+             <div className="w-10 h-10 rounded-full bg-zinc-700 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm transform translate-y-2 group-hover:translate-y-0">
                 <ArrowUpRight size={20} className="text-primary" />
              </div>
            </div>

@@ -28,7 +28,7 @@ const ChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-foreground">
+    <section className="py-20 md:py-28 bg-black">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           
@@ -47,7 +47,7 @@ const ChooseUs = () => {
                 const Icon = feature.icon;
                 return (
                   <div key={index} className="flex flex-col gap-3 group">
-                    <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center border border-gray-100 shadow-sm group-hover:scale-110 group-hover:shadow-prominent transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-zinc-800 flex items-center justify-center border border-zinc-700 shadow-sm group-hover:scale-110 group-hover:shadow-prominent transition-all duration-300">
                       <Icon className="w-6 h-6 text-primary" strokeWidth={2} />
                     </div>
                     <div>

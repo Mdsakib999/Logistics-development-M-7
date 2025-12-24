@@ -12,7 +12,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="about" className="py-20 md:py-28 bg-white overflow-hidden">
+    <section id="about" className="py-20 md:py-28 bg-black overflow-hidden">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
@@ -28,7 +28,7 @@ const AboutUs = () => {
             </p>
 
             {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-4 mb-10 border-y border-gray-100 py-8">
+            <div className="grid grid-cols-3 gap-4 mb-10 border-y border-zinc-800 py-8">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (

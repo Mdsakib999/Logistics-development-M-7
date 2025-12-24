@@ -1,96 +1,72 @@
-import Badge from "@/components/ui/Badge";
 import H2 from "@/components/ui/H2";
 import ImageOverlay from "@/components/ui/ImageOverlay";
-import P from "@/components/ui/P";
-import { Award, LaptopMinimal, Store } from "lucide-react";
+import { Cpu, Globe, Rocket, Server } from "lucide-react";
 
 const DigitalLogisticsSection = () => {
   return (
-    <section className="py-16 lg:py-20 bg-foreground">
-      <div className="container-custom">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
-          {/* Left - Image Grid */}
-          <div className="flex-1 w-full">
-            <div className="grid grid-cols-2 gap-4">
-              {/* Large Image */}
-              <div className="col-span-2 lg:col-span-1 lg:row-span-2">
+    <section className="py-24 bg-black relative overflow-hidden">
+      {/* Matrix Background Effect */}
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, #22c55e 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+
+      <div className="container-custom relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Left: Holographic Data Card */}
+          <div className="relative group">
+            {/* Holographic Border */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary via-blue-500 to-primary rounded-3xl opacity-30 group-hover:opacity-70 blur-md transition-opacity duration-500 animate-pulse"></div>
+            
+            <div className="relative bg-zinc-900 border border-zinc-800 p-2 rounded-3xl shadow-2xl overflow-hidden">
+              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden">
                 <ImageOverlay
                   src="/images/pexels-pixabay-209251.jpg"
-                  alt="Industrial warehouse"
-                  title="Industrial Warehouse"
-                  description="Large Scale Storage"
-                  width={400}
+                  alt="Digital Warehouse"
+                  title="Digital Warehouse"
+                  description="Automated Systems"
+                  width={600}
                   height={500}
-                  className="w-full h-[150px] sm:h-[300px] lg:h-full rounded-lg"
+                  className="w-full h-full object-cover opacity-80"
                 />
-              </div>
-
-              {/* Top Right Image */}
-              <div className="col-span-1">
-                <ImageOverlay
-                  src="/images/blog-2.png"
-                  alt="Warehouse interior"
-                  title="Warehouse Interior"
-                  description="Organized Inventory"
-                  width={300}
-                  height={240}
-                  className="w-full h-full rounded-lg"
-                />
-              </div>
-
-              {/* Bottom Right - Red Card */}
-              <div className="col-span-1 bg-primary rounded-lg p-6 flex items-center justify-center">
-                <div className="text-center">
-                  <Award
-                    className="w-12 h-12 text-foreground mx-auto mb-3"
-                    strokeWidth={1.5}
-                  />
-                  <p className="text-foreground font-semibold text-lg">
-                    High Quality
-                  </p>
+                
+                {/* Overlay UI Elements */}
+                <div className="absolute top-6 left-6 right-6 flex justify-between items-start">
+                   <Rocket className="text-primary w-8 h-8 animate-bounce" />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right - Content */}
-          <div className="flex-1">
-            <div className="mx-4 lg:mx-0">
-              <Badge>FREIGHT AND CARRIER</Badge>
-              <H2 color="primary">
-                Digital Logistics Solution For Your Business
+          {/* Right: Content */}
+          <div className="space-y-8">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-bold tracking-widest uppercase mb-6">
+                <Cpu size={14} /> Digital Transformation
+              </div>
+              <H2 className="text-5xl md:text-6xl text-white mb-6 leading-tight">
+                Logistics for the <br /> 
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Digital Age</span>
               </H2>
-              <P color="secondary">
-                At Freight Forward, we understand that in today&apos;s fast-paced
-                world, efficiency and reliability are paramount. Our
-                comprehensive logistics solutions are designed to streamline
-                your supply chain, reduce costs, and ensure timely delivery of
-                your goods. Whether you&apos;re a small business or a large
-                corporation, we have the expertise and resources to meet your
-                unique needs.
-              </P>
+              <p className="text-gray-400 text-lg leading-relaxed border-l-2 border-zinc-800 pl-6">
+                Revolutionize your supply chain with our AI-driven logistics platform. 
+                We combine real-time data analytics, automated warehousing, and 
+                smart route optimization to deliver unparalleled efficiency.
+              </p>
             </div>
 
-            {/* Stats */}
-            <div className="flex mx-4 gap-4 flex-wrap sm:flex-nowrap">
-              <div className="flex gap-6 my-2 flex-wrap border rounded-lg shadow-lg border-primary p-6 w-full sm:w-max">
-                <div className="flex gap-3 items-center justify-center">
-                  <LaptopMinimal size={28} />
-                  <h5 className="text-xl font-semibold text-secondary">
-                    Using New Technology
-                  </h5>
-                </div>
-              </div>
-              <div className="flex gap-6 my-2 flex-wrap border rounded-lg shadow-lg border-primary p-6 w-full sm:w-max">
-                <div className="flex gap-3 items-center justify-center">
-                  <Store size={28} />
-                  <h5 className="text-xl font-semibold text-secondary">
-                    Wider Market Reach
-                  </h5>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+               {[
+                 { icon: Globe, title: "Global Reach", desc: "Connected network across 150+ countries" },
+                 { icon: Server, title: "Smart Storage", desc: "Automated inventory management systems" }
+               ].map((item, idx) => (
+                 <div key={idx} className="bg-zinc-900/50 hover:bg-zinc-900 border border-zinc-800 hover:border-primary/50 p-6 rounded-2xl transition-all duration-300 group">
+                   <item.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
+                   <h4 className="text-white font-bold text-lg mb-2">{item.title}</h4>
+                   <p className="text-sm text-gray-400">{item.desc}</p>
+                 </div>
+               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>

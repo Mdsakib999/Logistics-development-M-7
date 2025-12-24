@@ -54,7 +54,7 @@ const HomeHero = () => {
               <Button
                 type="outline"
                 href="/service"
-                className="h-14 px-8 text-lg text-secondary bg-white/50 border-secondary/20"
+                className="h-14 px-8 text-lg text-secondary bg-white/5 border-secondary/20 hover:bg-white/10"
               >
                 View Services
               </Button>
@@ -76,7 +76,7 @@ const HomeHero = () => {
 
           {/* Image/Visual Right - Restored but Clean (No Blur) */}
           <div className="order-1 lg:order-2 relative animate-scale-in">
-            <div className="relative rounded-[50px] overflow-hidden shadow-prominent-xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-700 bg-white">
+            <div className="relative rounded-[50px] overflow-hidden shadow-prominent-xl border-4 border-zinc-800 transform rotate-3 hover:rotate-0 transition-transform duration-700 bg-zinc-900">
               <ImageOverlay
                 src="/images/scene-with-photorealistic-logistics-operations-proceedings (1).jpg"
                 alt="Logistics Operations"
@@ -88,33 +88,33 @@ const HomeHero = () => {
               />
 
               {/* Floating Cards - Clean, Solid Shadows, No Backdrop Blur */}
-              <div className="absolute top-10 right-10 bg-white p-4 rounded-2xl shadow-prominent-lg animate-float max-w-[160px]">
+              <div className="absolute top-10 right-10 bg-zinc-900/90 border border-white/10 p-4 rounded-2xl shadow-prominent-lg animate-float max-w-[160px]">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                     <Box size={20} />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-medium">
                       Deliveries
                     </div>
-                    <div className="text-lg font-bold text-gray-900">12k+</div>
+                    <div className="text-lg font-bold text-white">12k+</div>
                   </div>
                 </div>
               </div>
 
               <div
-                className="absolute bottom-10 left-10 bg-white p-4 rounded-2xl shadow-prominent-lg animate-float max-w-[180px]"
+                className="absolute bottom-10 left-10 bg-zinc-900/90 border border-white/10 p-4 rounded-2xl shadow-prominent-lg animate-float max-w-[180px]"
                 style={{ animationDelay: "1.5s" }}
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                     <Globe size={20} />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-medium">
                       Countries
                     </div>
-                    <div className="text-lg font-bold text-gray-900">150+</div>
+                    <div className="text-lg font-bold text-white">150+</div>
                   </div>
                 </div>
               </div>

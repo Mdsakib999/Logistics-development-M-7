@@ -18,7 +18,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary pt-20 pb-12 relative overflow-hidden">
+    <footer className="bg-black pt-20 pb-12 relative overflow-hidden">
       <div className="container-custom relative z-10">
         
         {/* Top Section: Navigation & Socials */}
@@ -45,7 +45,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-secondary transition-all duration-300 group"
+                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-secondary hover:text-accent transition-all duration-300 group"
                 >
                   <Icon size={20} className="group-hover:scale-110 transition-transform" />
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
       
       {/* Background Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-b from-primary/10 to-transparent pointer-events-none"></div>
     </footer>
   );
 };

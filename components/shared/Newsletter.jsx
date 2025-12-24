@@ -3,7 +3,7 @@ import { Mail, Sparkles } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-20 md:py-28 bg-black">
       <div className="container-custom">
         <div className="bg-gradient-happy rounded-[40px] p-8 md:p-16 shadow-prominent-xl flex flex-col items-center text-center relative overflow-hidden">
           
@@ -12,9 +12,9 @@ const Newsletter = () => {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -ml-20 -mb-20"></div>
           
           <div className="relative z-10 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white shadow-sm mb-6 border border-gray-100">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-background shadow-sm mb-6 border border-gray-100">
               <Sparkles size={16} className="text-secondary" />
-              <span className="text-sm font-bold text-secondary uppercase tracking-wider">Weekly Insights</span>
+              <span className="text-sm font-bold text-foreground uppercase tracking-wider">Weekly Insights</span>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-6 leading-tight">

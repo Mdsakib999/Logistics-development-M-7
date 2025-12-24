@@ -1,38 +1,46 @@
 import H1 from "@/components/ui/H1";
 import Image from "next/image";
+
 const Hero = ({ heading, description, image }) => {
   return (
-    <section className="relative bg-primary/70 py-16 lg:py-0 overflow-hidden">
-      {/* Background image only on small devices */}
-      <div className="absolute inset-0 opacity-30 bg-[url('/images/bernd-dittrich-eCc7FjMoR74-unsplash.jpg')] bg-cover bg-center lg:bg-none"></div>
-
-      {/* Overlay */}
-      <div className="absolute inset-0  bg-secondary/50 lg:bg-transparent"></div>
-      <div className="px-4 lg:px-0">
-        <div className="flex relative flex-col lg:flex-row items-center gap-8 lg:gap-12">
-          {/* Left Content */}
-          <div className="absolute hidden lg:block w-3/5 h-full z-20 bg-gradient-happy"></div>
-          <div className="flex-1 ml-0 lg:ml-24 z-20">
-            <H1>{heading}</H1>
-            <p
-              className={`text-md z-10 max-w-2xl font-semibold leading-[1.39] tracking-[0.06em] text-balance text-gray-500 mb-[19px]`}
-            >
-              {description}
-            </p>
-          </div>
-
-          {/* Right Image */}
-          <div className="flex-1 relative w-full h-[400px]">
-            <Image
-              src={image}
-              alt="Container ship at port"
-              fill
-              className="object-cover  opacity-50"
-              priority
-            />
-          </div>
-        </div>
+    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-black pt-20">
+      {/* Background Image with Gradient Overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src={image}
+          alt={heading}
+          fill
+          className="object-cover opacity-40 grayscale"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black"></div>
       </div>
+
+      {/* Decorative Grid */}
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150 grayscale"></div>
+
+      {/* Content */}
+      <div className="container-custom relative z-10 text-center max-w-4xl mx-auto px-4">
+        <div className="inline-block mb-6 relative">
+             <div className="absolute -inset-1 rounded-lg bg-primary/30 blur-md"></div>
+             <span className="relative px-4 py-1.5 rounded-full border border-primary/50 bg-black/50 text-primary text-sm font-mono tracking-widest uppercase backdrop-blur-sm">
+                Freight Forwarding
+             </span>
+        </div>
+        
+        <H1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-8 font-black tracking-tighter text-white drop-shadow-2xl">
+          {heading}
+          <span className="text-primary">.</span>
+        </H1>
+
+        <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed border-l-2 border-primary/50 pl-6 text-left md:text-center md:border-l-0 md:pl-0 font-light">
+          {description}
+        </p>
+      </div>
+
+      {/* Bottom Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
     </section>
   );
 };

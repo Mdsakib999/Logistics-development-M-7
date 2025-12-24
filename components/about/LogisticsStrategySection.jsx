@@ -1,74 +1,69 @@
 import H2 from "@/components/ui/H2";
 import ImageOverlay from "@/components/ui/ImageOverlay";
-import P from "@/components/ui/P";
+import { Eye, Flag, Target, TrendingUp } from "lucide-react";
 
 const LogisticsStrategySection = () => {
+  const strategies = [
+    {
+      icon: Eye,
+      title: "Our Vision",
+      description: "To be the leading logistics provider recognized for innovation and excellence.",
+      image: "/images/pexels-alexander-bobrov-390088-3278012.jpg"
+    },
+    {
+      icon: Flag,
+      title: "Our Mission",
+      description: "Delivering exceptional services through cutting-edge technology and sustainability.",
+      image: "/images/global-shipping-international-logistics-illustration.jpg"
+    }
+  ];
+
   return (
-    <section className="pb-16 pt-32 lg:py-20 bg-foreground">
-      <div className="container-custom">
-        {/* left side div */}
-        <div className="bg-primary relative z-1 w-full lg:w-3/4 rounded-2xl p-12 h-max">
-          <div className="flex items-center gap-2 mb-[11px]">
-            <div className="w-1 h-[33px] bg-secondary"></div>
-            <span className="text-lg uppercase font-semibold leading-[1.21] text-foreground">
-              Our Strategy
-            </span>
-          </div>
-          <div className="lg:max-w-md">
-                      <H2 color="foreground">
-            Logistics Strategy Tailored for Your Success
-          </H2>
-          </div>
-          <div className="">
-            <div className="flex items-center gap-4 mt-8">
-              <div className="w-4 h-4 bg-foreground"></div>
-              <h5 className="text-white font-semibold text-xl">Our Vision</h5>
+    <section className="py-24 bg-zinc-950 relative overflow-hidden">
+      <div className="container-custom relative z-10">
+        <div className="text-center max-w-2xl mx-auto mb-20">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-bold tracking-widest uppercase mb-6">
+                <Target size={14} /> Strategic Direction
             </div>
-            <div className="pl-8 pt-2 lg:max-w-md">
-              <P color="foreground">
-                Our vision is to be the leading logistics provider recognized
-                for our innovative solutions, operational excellence, and
-                unwavering commitment to customer satisfaction.
-              </P>
-            </div>
-          </div>
-          {/* second div for our mission */}
-          <div className="">
-            <div className="flex items-center gap-4 mt-8">
-              <div className="w-4 h-4 bg-foreground"></div>
-              <h5 className="text-white font-semibold text-xl">Our Mission</h5>
-            </div>
-            <div className="pl-8 pt-2 lg:max-w-md">
-              <P color="foreground">
-                Our mission is to deliver exceptional logistics services that
-                exceed our client&apos;s expectations through cutting-edge
-                technology, dedicated customer service, and a commitment to
-                sustainability.
-              </P>
-            </div>
-          </div>
-          <div className="absolute h-40 w-70 rounded-2xl border-4 border-background bg-white -top-32 sm:-top-24 lg:top-12 right-6 lg:-right-40 shadow-lg overflow-hidden">
-            <ImageOverlay
-              src="/images/pexels-alexander-bobrov-390088-3278012.jpg"
-              alt="Logistics Strategy"
-              title="Logistics Strategy"
-              description="Tailored for Success"
-              width={320}
-              height={120}
-              className="h-full w-full rounded-2xl"
-            />
-          </div>
-          <div className="absolute shadow-lg hidden lg:block h-auto w-96 bottom-4 rounded-2xl border-white border -right-54">
-            <ImageOverlay
-              src="/images/global-shipping-international-logistics-illustration.jpg"
-              alt="Logistics Illustration"
-              title="Global Shipping"
-              description="International Logistics"
-              className="w-full h-full rounded-2xl"
-              width={200}
-              height={200}
-            />
-          </div>
+            <H2 className="text-5xl md:text-6xl text-white mb-6">
+                Tailored for <span className="text-primary">Success</span>
+            </H2>
+            <p className="text-gray-400 text-lg">
+                Our strategic roadmap is built on a foundation of innovation, sustainability, and customer-centricity.
+            </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {strategies.map((item, index) => (
+                <div key={index} className="group relative bg-black border border-zinc-800 rounded-3xl overflow-hidden hover:border-primary/50 transition-colors duration-500">
+                    
+                    {/* Top Image Section */}
+                    <div className="relative h-64 overflow-hidden">
+                         <ImageOverlay
+                            src={item.image}
+                            alt={item.title}
+                            title={item.title}
+                            description="Strategic Goal"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
+                            width={600}
+                            height={300}
+                        />
+                    </div>
+
+                    {/* Content Section */}
+                    <div className="pt-12 px-8 pb-8">
+                        <div className="flex justify-between items-start mb-4">
+                             <h3 className="text-3xl font-bold text-white group-hover:text-primary transition-colors">{item.title}</h3>
+                        </div>
+                        <p className="text-gray-400 leading-relaxed text-lg">
+                            {item.description}
+                        </p>
+                    </div>
+
+                    {/* Decorative Corner */}
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-3xl -mr-10 -mt-10 rounded-full"></div>
+                </div>
+            ))}
         </div>
       </div>
     </section>

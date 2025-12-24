@@ -1,49 +1,47 @@
-import Link from "next/link";
+import Button from "@/components/ui/Button";
+import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section
-      className="py-16 lg:py-20 my-16 relative bg-primary z-20"
-      style={{
-        backgroundImage:
-          'url("/images/scene-with-photorealistic-logistics-operations-proceedings.jpg")',
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="absolute w-full h-full inset-0 bg-black/60 -z-10"></div>
-      <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto">
-          <div className="flex justify-center items-center gap-2 mb-[11px]">
-            <div className="w-1 h-[33px]  z-10  bg-primary"></div>
-            <span className="text-lg  z-10 uppercase font-semibold leading-[1.21] text-foreground">
-              READY TO MOVE?
-            </span>
-          </div>
-          <div className="">
-            <h2
-              className={`text-[32px] max-w-lg mx-auto font-bold leading-[1.22] tracking-[0.02em] mb-4 text-foreground`}
-            >
-              Are Looking for the Best Quality Transport Services?
+    <section className="py-20 bg-gradient-vibrant relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-repeat"></div>
+      
+      {/* Floating Shapes */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
+
+      <div className="container-custom relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 text-center lg:text-left">
+          
+          <div className="max-w-2xl">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-foreground leading-[0.9] mb-6 tracking-tighter">
+              READY TO MOVE <br/>
+              YOUR CARGO?
             </h2>
-          </div>
-          <div className="mx-auto max-w-lg">
-            <p
-              className={`text-md z-10 max-w-2xl font-normal leading-[1.39] tracking-[0.06em] text-white mb-[19px]`}
-            >
-              Experience seamless logistics solutions tailored to your business
-              needs. Let&apos;s get your freight moving today.
+            <p className="text-foreground/70 text-xl font-medium max-w-lg">
+              Experience the future of logistics with our premium freight services. 
+              Get your quote in under 2 minutes.
             </p>
           </div>
-          <div className="mt-8 lg:mt-12 flex z-50  justify-center gap-4 flex-wrap">
-            <Link
-              href="/service"
-              className={`flex cursor-pointer text-secondary hover:bg-primary hover:text-foreground bg-foreground  items-center ease-in-out duration-300 transition-all text-md justify-center w-max sm:h-12 rounded-md  py-2 px-4 sm:py-5 sm:px-8`}
-            >
-              Learn More
-            </Link>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+             <Button 
+                href="/contact" 
+                type="primary" 
+                className=""
+             >
+                Get Quote Now <ArrowRight className="ml-2" />
+             </Button>
+             <Button 
+                href="/service" 
+                type="outline" 
+                className=""
+             >
+                Explore Services
+             </Button>
           </div>
+
         </div>
       </div>
     </section>

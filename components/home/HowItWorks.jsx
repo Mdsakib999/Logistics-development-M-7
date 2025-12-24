@@ -26,7 +26,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-zinc-900 relative overflow-hidden">
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge>How It Works</Badge>
@@ -42,7 +42,7 @@ const HowItWorks = () => {
         <div className="max-w-5xl mx-auto">
           {/* Progress Line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-full max-w-4xl">
-            <div className="relative h-1 bg-gray-200 top-16">
+            <div className="relative h-1 bg-zinc-800 top-16">
               <div className="absolute h-full w-2/3 bg-gradient-vibrant rounded-full"></div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const HowItWorks = () => {
                 <div key={index} className="flex flex-col items-center text-center group">
                   {/* Circular Node */}
                   <div className="relative z-10 w-32 h-32 rounded-full bg-gradient-vibrant flex items-center justify-center mb-6 shadow-prominent-xl group-hover:scale-110 transition-all duration-300">
-                    <div className="absolute inset-2 rounded-full bg-white flex items-center justify-center">
+                    <div className="absolute inset-2 rounded-full bg-zinc-900 flex items-center justify-center">
                       <Icon className="w-10 h-10 text-secondary" strokeWidth={2} />
                     </div>
                   </div>

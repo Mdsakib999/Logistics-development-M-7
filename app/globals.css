@@ -34,18 +34,16 @@
     font-weight: 400;
   }
 
-  /* Happy & Vibrant Color Palette */
+  /* Black & Light Green Theme */
   @theme {
-    --color-primary: oklch(59.6% 0.145 163.225);
-    --color-secondary: #1e3a8a;
-
-    --color-accent: #fbbf24; /* Bright yellow - highlights */
-    --color-foreground: oklch(
-      95% 0.052 163.051
-    ); /* Light cream - warm background */
-    --color-background: #1e1b4b; /* Deep indigo - dark sections */
-    --color-muted: #64748b; /* Slate gray - secondary text */
-    --color-success: #10b981; /* Emerald green */
+    --color-primary: #4ade80; /* Light Green */
+    --color-secondary: #ffffff; /* White for high contrast text against black */
+    
+    --color-accent: #22c55e; /* Vibrante Green */
+    --color-foreground: #f0fdf4; /* Very light green/white for text */
+    --color-background: #000000; /* Pure Black */
+    --color-muted: #94a3b8; /* Slate gray */
+    --color-success: #4ade80; /* Matches primary */
   }
 
   /* Smooth scroll behavior */
@@ -158,8 +156,8 @@
 
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.1),
-    0 10px 10px -5px rgba(249, 115, 22, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(74, 222, 128, 0.1),
+    0 10px 10px -5px rgba(74, 222, 128, 0.04);
 }
 
 .hover-scale {
@@ -170,39 +168,35 @@
   transform: scale(1.02);
 }
 
-/* Shadow Utilities - Prominent */
+/* Shadow Utilities - Prominent - Green Tint */
 .shadow-prominent {
-  box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.1),
-    0 2px 4px -1px rgba(249, 115, 22, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(74, 222, 128, 0.1),
+    0 2px 4px -1px rgba(74, 222, 128, 0.06);
 }
 
 .shadow-prominent-lg {
-  box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.15),
-    0 4px 6px -2px rgba(249, 115, 22, 0.08);
+  box-shadow: 0 10px 15px -3px rgba(74, 222, 128, 0.15),
+    0 4px 6px -2px rgba(74, 222, 128, 0.08);
 }
 
 .shadow-prominent-xl {
-  box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.2),
-    0 10px 10px -5px rgba(249, 115, 22, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(74, 222, 128, 0.2),
+    0 10px 10px -5px rgba(74, 222, 128, 0.1);
 }
 
 /* Gradient Backgrounds */
 .bg-gradient-happy {
-  background: linear-gradient(
-    135deg,
-    oklch(95% 0.052 163.051) 0%,
-    oklch(84.5% 0.143 164.978) 100%
-  );
+  background: linear-gradient(135deg, #000000 0%, #052e16 100%);
 }
 
 .bg-gradient-vibrant {
   background: linear-gradient(
     135deg,
-    oklch(84.5% 0.143 164.978) 0%,
-    oklch(50.8% 0.118 165.612) 100%
+    #000000 0%,
+    #064e3b 100%
   );
 }
 
 .bg-gradient-dark {
-  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  background: linear-gradient(135deg, #000000 0%, #111111 100%);
 }

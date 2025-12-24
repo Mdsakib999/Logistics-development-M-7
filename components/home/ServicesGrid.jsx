@@ -8,7 +8,7 @@ const ServicesGrid = ({ limit = "1000" }) => {
   const displayedServices = services.slice(0, Number(limit));
 
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-20 md:py-28 bg-zinc-900">
       <div className="container-custom">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
