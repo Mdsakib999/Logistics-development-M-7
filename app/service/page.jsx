@@ -1,18 +1,19 @@
-import PricingSection from "@/components/home/PricingSection";
-import ServicesGrid from "@/components/home/ServicesGrid";
-import ServiceStats from "@/components/home/ServiceStats";
-import PageHero from "@/components/shared/PageHero";
+import ServiceHero from "@/components/service/ServiceHero";
+import ServiceListing from "@/components/service/ServiceListing";
+import ServicePricing from "@/components/service/ServicePricing";
+import ServiceStats from "@/components/service/ServiceStats";
 
 const ServicePage = () => {
   return (
     <>
-      <PageHero heading="Service" description="Freight Forward is a leading name in the logistics industry, we
-              ensure your shipments are always on time and secure."
-        image="/images/bernd-dittrich-eCc7FjMoR74-unsplash.jpg"
-              />
-      <ServicesGrid />
+      <ServiceHero 
+          heading="Services" 
+          description="We provide comprehensive logistics solutions tailored to meet your global supply chain needs with precision and reliability."
+          image="/images/bernd-dittrich-eCc7FjMoR74-unsplash.jpg"
+      />
       <ServiceStats />
-      <PricingSection />
+      <ServiceListing />
+      <ServicePricing />
     </>
   );
 };

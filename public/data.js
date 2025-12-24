@@ -296,7 +296,7 @@ const services = [
   },
   {
     id: 5,
-    image: "/images/why-choose.png",
+    image: "/images/why-choose.jpg",
     title: "Distribution",
     icon: Boxes,
     info: "Timely nationwide delivery",

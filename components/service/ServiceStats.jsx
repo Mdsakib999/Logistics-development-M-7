@@ -1,51 +1,28 @@
-import { Clock, Globe, TrendingUp } from "lucide-react";
-
-const ServiceStats = ({ stats }) => {
-  const statsConfig = [
-    {
-      key: "deliveryTime",
-      label: "Delivery Time",
-      icon: Clock,
-      value: stats.deliveryTime,
-    },
-    {
-      key: "coverage",
-      label: "Coverage",
-      icon: Globe,
-      value: stats.coverage,
-    },
-    {
-      key: "reliability",
-      label: "Reliability",
-      icon: TrendingUp,
-      value: stats.reliability,
-    },
+const ServiceStats = () => {
+  const stats = [
+    { value: "99.9%", label: "Uptime Guaranteed" },
+    { value: "24/7", label: "Support Coverage" },
+    { value: "50+", label: "Warehouses" },
+    { value: "1M+", label: "Parcels Handled" },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {statsConfig.map((stat) => {
-        const Icon = stat.icon;
-        return (
-          <div
-            key={stat.key}
-            className="bg-gradient-to-br from-primary to-primary/80 p-6 rounded-xl shadow-lg text-foreground hover:scale-105 transition-transform duration-300"
-          >
-            <div className="flex items-center gap-4">
-              <div className="bg-foreground/20 p-3 rounded-lg">
-                <Icon size={32} className="text-foreground" />
+    <section className="py-20 bg-black border-y border-zinc-900">
+      <div className="container-custom">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center group cursor-default">
+              <div className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-600 mb-3 group-hover:from-primary group-hover:to-zinc-800 transition-all duration-300">
+                {stat.value}
               </div>
-              <div>
-                <p className="text-sm font-medium opacity-90">{stat.label}</p>
-                <p className="text-2xl md:text-3xl font-bold mt-1">
-                  {stat.value}
-                </p>
+              <div className="text-zinc-500 font-medium uppercase tracking-widest text-xs md:text-sm">
+                {stat.label}
               </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
