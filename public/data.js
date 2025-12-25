@@ -16,7 +16,7 @@ const teamMembers = [
     name: "Muntasir Mahmud",
     role: "Product Manager",
     description:
-      "Tristique pharetra consectetur. Et vitae rutrum aliquam consectetur dictum enim placerat nulla. Turpis pharetra pharetra enim platea risus neque felis interdum.Tristique pharetra consectetur. Et vitae rutrum aliquam consectetur dictum enim placerat nulla. Turpis pharetra pharetra enim platea risus neque felis interdum.",
+      "With over 10 years of experience in product strategy and supply chain management, Muntasir leads our product vision, ensuring our logistics solutions meet the evolving needs of the global market.",
     image:
       "/images/testimonial-1.png",
     social: {
@@ -30,7 +30,7 @@ const teamMembers = [
     id: 2,
     name: "Sarah Johnson",
     role: "Logistics Coordinator",
-    description: " lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae rutrum aliquam consectetur dictum enim placerat nulla. Turpis pharetra pharetra enim platea risus neque felis interdum.Tristique pharetra consectetur. Et vitae rutrum aliquam consectetur dictum enim placerat nulla. Turpis pharetra pharetra enim platea risus neque felis interdum.",
+    description: "Sarah brings precision and efficiency to every shipment. Her expertise in complex logistics coordination ensures that your freight moves smoothly across borders and reaches its destination on time, every time.",
     image:
       "/images/testimonial-2.png",
     social: {
@@ -45,7 +45,7 @@ const teamMembers = [
     name: "David Chen",
     role: "Operations Director",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Et vitae rutrum aliquam consectetur dictum enim placerat nulla. Turpis pharetra pharetra enim platea risus neque felis interdum.Tristique pharetra consectetur. Et vitae rutrum aliquam consectetur dictum enim placerat nulla. Turpis pharetra pharetra enim platea risus neque felis interdum.",
+      "David oversees our global operations with a focus on operational excellence and strategic growth. His leadership drives our team to deliver superior service standards and innovative logistics solutions.",
     image:
       "/images/testomonial-3.jpg",
     social: {

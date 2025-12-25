@@ -17,7 +17,7 @@ const ServiceListing = () => {
             >
                 {/* Top Image Section */}
                 <div className="relative h-64 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent z-10"></div>
                      <ImageOverlay
                         src={service.image || "/images/pexels-pixabay-209251.jpg"}
                         alt={service.title}
