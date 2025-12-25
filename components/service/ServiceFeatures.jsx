@@ -1,16 +1,19 @@
 import { Check } from "lucide-react";
 
+
 const ServiceFeatures = ({ features }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {features.map((feature, index) => (
-            <div key={index} className="flex items-start gap-3 p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 hover:border-primary/30 transition-colors group">
-                <div className="mt-0.5 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20">
-                     <Check size={12} className="text-primary" />
+            <div key={index} className="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-300 group hover:-translate-y-1">
+                <div className="mt-1 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:shadow-[0_0_20px_rgba(74,222,128,0.4)] transition-all duration-300">
+                     <Check size={14} className="text-primary group-hover:text-black transition-colors" />
                 </div>
-                <span className="text-zinc-300 text-sm font-medium group-hover:text-white transition-colors">
+                <div>
+                   <span className="text-zinc-300 text-base font-medium group-hover:text-white transition-colors leading-relaxed block">
                     {feature}
-                </span>
+                   </span>
+                </div>
             </div>
         ))}
     </div>

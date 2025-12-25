@@ -13,7 +13,7 @@ const RelatedServices = ({ serviceId }) => {
   }
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-foreground">
+    <section className="py-12 md:py-16 lg:py-20 bg-gradient-vibrant">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center flex flex-col items-center justify-center mb-8 md:mb-12">
