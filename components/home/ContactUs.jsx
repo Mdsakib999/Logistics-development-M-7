@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] overflow-hidden my-20">
+    <section className="relative min-h-[600px] md:min-h-[700px] overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-2 h-full min-h-[600px] md:min-h-[700px]">
         {/* Left Side - Solid Gradient Background with CTA */}
         <div className="relative bg-gradient-vibrant flex items-center justify-center p-8 md:p-16 lg:p-20">
