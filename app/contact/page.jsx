@@ -13,7 +13,7 @@ const ContactPage = () => {
       />
       <ContactGrid />
       <ContactForm />
-      <ContactMap />
+      {/* <ContactMap /> */}
     </>
   );
 };

@@ -13,7 +13,7 @@ const ServicePage = () => {
       />
       <ServiceStats />
       <ServiceListing />
-      <ServicePricing />
+      {/* <ServicePricing /> */}
     </>
   );
 };
